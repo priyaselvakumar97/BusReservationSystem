@@ -11,21 +11,24 @@ public class Bus {
 			this.ac=ac;
 			this.capacity=cap;
 		}
-           public int getCapacity(){   //get method also called or accessor method
-            	return capacity;
+		    public int getBusNo() {
+      	       return busNo;
             }
-           public void setcapacity(int cap) {  //set also called mutator method 
-        	   capacity=cap;
-           }
+          
            public boolean isAc() {
         	   return ac;
+           }
+           public int getCapacity(){   //get method also called or accessor method
+           	return capacity;
            }
            public void setAc(boolean val) {
         	   ac=val;
            }
-           public int getBusNo() {
-        	   return busNo;
-           }
+          public void setcapacity(int cap) {  //set also called mutator method 
+       	   capacity=cap;
+          }
+          
+          
           public void  displayBusInfo() {
         	  System.out.println("Bus No:"+busNo+" "+"AC:"+ac+" "+"Total Capacity:"+capacity);
           }
